@@ -45,7 +45,8 @@ li{list-style-type: none;}
     background-color: var(--text-white-color);
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);}
 
-.container{max-width: 1128px;
+.container{
+    max-width: 1128px;
     margin: 0 auto;
         padding: 0 ;
 }
@@ -401,19 +402,91 @@ height: 16px;
             border: 1px solid var(--brand-button-color);
     
         }
-    .customer-item:hover .customer-icon{
+    .customer-item:hover .customer-icon-one{
         fill:var(--brand-button-color);
     }
-         .customer-item:focus .customer-icon {
+         .customer-item:focus .customer-icon-one {
              fill: var(--brand-button-color);
          }
-   .customer-icon{
-    width: 104px;
-    height: 56px;
-    fill:#AFB1B8;
-    
-   }
 
+         .customer-item:hover .customer-icon-two {
+             fill: var(--brand-button-color);
+         }
+    
+         .customer-item:focus .customer-icon-two {
+             fill: var(--brand-button-color);
+         }
+
+                  .customer-item:hover .customer-icon-three {
+                      fill: var(--brand-button-color);
+                  }
+        
+                  .customer-item:focus .customer-icon-three {
+                      fill: var(--brand-button-color);
+                  }
+
+                                        .customer-item:hover .customer-icon-four {
+                                            fill: var(--brand-button-color);
+                                        }
+                    
+                                        .customer-item:focus .customer-icon-four {
+                                            fill: var(--brand-button-color);
+                                        }
+
+
+                      .customer-item:hover .customer-icon-five {
+                                      fill: var(--brand-button-color);
+                                               }
+                                                
+                                      .customer-item:focus .customer-icon-five {
+                                                fill: var(--brand-button-color);
+                                                }
+
+                                           .customer-item:hover .customer-icon-six {
+                                                    fill: var(--brand-button-color);
+                                              }
+                                                
+                                      .customer-item:focus .customer-icon-six {
+                                                fill: var(--brand-button-color);
+                                                        }
+
+
+
+
+         .customer-list{
+            width: 168px;
+         }
+   
+   .customer-icon-one{
+    fill: #AFB1B8;
+    width: 41px;
+    height: 47px;
+   }
+   .customer-icon-two{
+    fill:#AFB1B8;
+    width: 40px;
+    height: 52px;
+   }
+   .customer-icon-three{
+    fill:#AFB1B8;
+    width: 44px;
+    height: 41px;
+   }
+   .customer-icon-four{
+    fill:#AFB1B8;
+    width: 84px;
+    height: 41px;
+   }
+.customer-icon-five{
+    fill:#AFB1B8;
+    width: 63px;
+    height: 45px;
+}
+.customer-icon-six{
+    fill:#AFB1B8;
+    width: 94px;
+    height: 44px;
+}
    
    
 
@@ -427,12 +500,17 @@ height: 16px;
     padding: 100px 0px; 
 }
 
+.container-all-footer{
+    display: flex;
+max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 .container_footer{
     width: 264px;
-    margin-right: auto;
-    margin-left: 0px;
-    display: inline-block;
+   
 }
 
 
@@ -463,10 +541,10 @@ height: 16px;
         letter-spacing: 0.02em;}
 
         .container-social-media{
-            display: inline-block;
+            
             width: 208px;
             margin-left: 120px;
-            vertical-align: top;
+            
         }
 
         .footer-text-social{
@@ -499,6 +577,10 @@ height: 16px;
             .footer-icon-item:hover{
                 background-color:#31D0AA;
             }
+
+                        .footer-icon-item:focus {
+                            background-color: #31D0AA;
+                        }
             
             .icons-social-footer {
             
