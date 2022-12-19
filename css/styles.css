@@ -112,6 +112,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
      letter-spacing: 0.02em;
      padding-top: 24px;
      padding-bottom: 24px;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
      
     
     
@@ -164,6 +168,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         padding-top: 24px;
          padding-bottom: 24px;
          display: block;
+
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
         
         
     
@@ -221,6 +229,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
                     sans-serif;
              padding: 16px 32px;
              margin-top: 48px;
+
+            transition-property: box-shadow;
+                transition-duration: 250ms;
+                transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
             }
 
     .parent_button{display: flex;
@@ -408,10 +420,15 @@ height: 16px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    
 
          display: flex;
         justify-content: center;
         align-items: center;
+
+        transition-property: border;
+            transition-duration: 250ms;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
         
    }
@@ -482,31 +499,58 @@ height: 16px;
     fill: #AFB1B8;
     width: 41px;
     height: 47px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
    }
    .customer-icon-two{
     fill:#AFB1B8;
     width: 40px;
     height: 52px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
    }
    .customer-icon-three{
     fill:#AFB1B8;
     width: 44px;
     height: 41px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
    }
    .customer-icon-four{
     fill:#AFB1B8;
     width: 84px;
     height: 41px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
    }
 .customer-icon-five{
     fill:#AFB1B8;
     width: 63px;
     height: 45px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-six{
     fill:#AFB1B8;
     width: 94px;
     height: 44px;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
    
    
@@ -590,7 +634,11 @@ max-width: 1128px;
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color:  rgba(255, 255, 255, 0.1);;
+            background-color:  rgba(255, 255, 255, 0.1);
+
+            transition-property: background-color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
 
             
@@ -632,6 +680,12 @@ max-width: 1128px;
          letter-spacing: 0.04em;
          cursor: pointer;
          padding: 12px 24px;
+
+        transition-property: background-color,color,border,box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+         
          
     }
     .btn_portfolio:hover,.btn_portfolio:focus{ 
@@ -647,7 +701,14 @@ max-width: 1128px;
             border-bottom-width: 0.5px;
             border-bottom-style: solid;
             border-bottom-color: #F4F4FD;
-            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);}
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+           
+        
+        transition-property: box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
             .card_item:hover,.card_item:focus{
                 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
@@ -655,6 +716,7 @@ max-width: 1128px;
 
     .card-relative{
         position: relative;
+        overflow: hidden;
     }
     
     /* .card-relative::before{
@@ -693,12 +755,26 @@ max-width: 1128px;
         width: 100%;
         height: 100%;
         background-color: var(--brand-button-color);
-        opacity: 0;
+        
         padding: 40px 32px ;
+        
+
+        transform: translateY(100%);
+
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     }
+
+
+
+
+
+
                 .card_item:hover .card-overlay{
-            opacity: 1;
             
+            transform: translateY(0%);
         }
 
  .card_item:focus .card-overlay {
@@ -773,6 +849,10 @@ justify-content: center;
 
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition-property:box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
    
 }
